@@ -152,7 +152,7 @@
 									<key>type</key>
 									<integer>2</integer>
 									<key>value</key>
-									<real>-15</real>
+									<real>20</real>
 								</dict>
 								<dict>
 									<key>easing</key>
@@ -167,7 +167,7 @@
 									<key>type</key>
 									<integer>2</integer>
 									<key>value</key>
-									<real>20</real>
+									<real>-15</real>
 								</dict>
 								<dict>
 									<key>easing</key>
@@ -182,7 +182,37 @@
 									<key>type</key>
 									<integer>2</integer>
 									<key>value</key>
-									<real>-15</real>
+									<real>20</real>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>rotation</string>
+									<key>time</key>
+									<real>3</real>
+									<key>type</key>
+									<integer>2</integer>
+									<key>value</key>
+									<real>20</real>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>rotation</string>
+									<key>time</key>
+									<real>4</real>
+									<key>type</key>
+									<integer>2</integer>
+									<key>value</key>
+									<real>20</real>
 								</dict>
 							</array>
 							<key>name</key>
@@ -260,7 +290,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>-15</real>
+						<real>20</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -423,13 +453,13 @@
 			<key>chainedSequenceId</key>
 			<integer>0</integer>
 			<key>length</key>
-			<real>2</real>
+			<real>4</real>
 			<key>name</key>
 			<string>ArmAnimation</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>0.6328125</real>
 			<key>position</key>
-			<real>2</real>
+			<real>3</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7D0D4BD619C0D3FD0006E805 /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D4BD519C0D3FD0006E805 /* Penguin.m */; };
 		7D0D4BDA19C0D40E0006E805 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D4BD919C0D40E0006E805 /* Seal.m */; };
+		7D74459819C4044A00645DB1 /* WaitingPenguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D74459719C4044A00645DB1 /* WaitingPenguin.m */; };
+		7D74459C19C4DB0200645DB1 /* EndGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D74459B19C4DB0200645DB1 /* EndGame.m */; };
+		7DA5F9F819C0DA9700CDBAB0 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA5F9F719C0DA9700CDBAB0 /* Gameplay.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -62,6 +65,12 @@
 		7D0D4BD519C0D3FD0006E805 /* Penguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Penguin.m; path = Source/Penguin.m; sourceTree = "<group>"; };
 		7D0D4BD819C0D40E0006E805 /* Seal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seal.h; path = Source/Seal.h; sourceTree = "<group>"; };
 		7D0D4BD919C0D40E0006E805 /* Seal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seal.m; path = Source/Seal.m; sourceTree = "<group>"; };
+		7D74459619C4044A00645DB1 /* WaitingPenguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingPenguin.h; sourceTree = "<group>"; };
+		7D74459719C4044A00645DB1 /* WaitingPenguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingPenguin.m; sourceTree = "<group>"; };
+		7D74459A19C4DB0200645DB1 /* EndGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndGame.h; sourceTree = "<group>"; };
+		7D74459B19C4DB0200645DB1 /* EndGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndGame.m; sourceTree = "<group>"; };
+		7DA5F9F619C0DA9700CDBAB0 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
+		7DA5F9F719C0DA9700CDBAB0 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -135,6 +144,12 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				7DA5F9F619C0DA9700CDBAB0 /* Gameplay.h */,
+				7DA5F9F719C0DA9700CDBAB0 /* Gameplay.m */,
+				7D74459A19C4DB0200645DB1 /* EndGame.h */,
+				7D74459B19C4DB0200645DB1 /* EndGame.m */,
+				7D74459619C4044A00645DB1 /* WaitingPenguin.h */,
+				7D74459719C4044A00645DB1 /* WaitingPenguin.m */,
 				7D0D4BD419C0D3FD0006E805 /* Penguin.h */,
 				7D0D4BD519C0D3FD0006E805 /* Penguin.m */,
 				7D0D4BD819C0D40E0006E805 /* Seal.h */,
@@ -352,9 +367,12 @@
 			files = (
 				7D0D4BDA19C0D40E0006E805 /* Seal.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				7D74459819C4044A00645DB1 /* WaitingPenguin.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				7D0D4BD619C0D3FD0006E805 /* Penguin.m in Sources */,
+				7D74459C19C4DB0200645DB1 /* EndGame.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				7DA5F9F819C0DA9700CDBAB0 /* Gameplay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
