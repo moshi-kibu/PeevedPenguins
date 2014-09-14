@@ -59,7 +59,7 @@ int _currentLevel = START_LEVEL;
         _mouseJointNode.position = touchLocation;
         
         // setup a spring joint between the mouseJointNode and the catapultArm
-        _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
+        _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:300.f];
         
         // create a penguin from the ccb-file
         _currentPenguin = (Penguin*)[CCBReader load:@"Penguin"];
@@ -166,15 +166,10 @@ int _currentLevel = START_LEVEL;
 }
 
 - (void)blockRemoved:(CCNode *)block {
-
     CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"BlockShatter"];
-
     explosion.autoRemoveOnFinish = TRUE;
-
     explosion.position = block.position;
-
     [block.parent addChild:explosion];
-    
     [block removeFromParent];
 }
 
@@ -215,21 +210,30 @@ int _currentLevel = START_LEVEL;
             return;
         }
     }
-}
-
-- (void)nextAttempt {
-    _currentPenguin = nil;
-    [_contentNode stopAction:_followPenguin];
     
     if (![self sealsExist]){
         [self loadNextLevel];
     }
     
-    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
+}
+
+- (void)nextAttempt {
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:0.f position:ccp(0, 0)];
     [_contentNode runAction:actionMoveTo];
+    
+    _currentPenguin = nil;
+    [_contentNode stopAction:_followPenguin];
+    
+//    if (![self sealsExist]){
+//        [self loadNextLevel];
+//    }
+    
 }
 
 - (void)loadNextLevel {
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:0.f position:ccp(0, 0)];
+    [_contentNode runAction:actionMoveTo];
+    
     [_levelNode removeAllChildren];
     [self removePenguins];
     
