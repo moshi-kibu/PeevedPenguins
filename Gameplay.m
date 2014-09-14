@@ -10,6 +10,8 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "Penguin.h"
 #import "Seal.h"
+#import "TallBlock.h"
+#import "LongBlock.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -24,6 +26,7 @@
     CCAction *_followPenguin;
 }
 
+static const float BLOCK_SHATTER_ENERGY = 20000.f;
 static const float MIN_SPEED = 5.f;
 int _currentLevel = START_LEVEL;
 
@@ -115,7 +118,6 @@ int _currentLevel = START_LEVEL;
     }
 }
 
-
 - (void)launchPenguin {
     // loads the Penguin.ccb we have set up in Spritebuilder
     CCNode* penguin = [CCBReader load:@"Penguin"];
@@ -151,6 +153,29 @@ int _currentLevel = START_LEVEL;
             [self sealRemoved:nodeA];
         } key:nodeA];
     }
+}
+
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair block:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+    float energy = [pair totalKineticEnergy];
+    
+    if (energy > BLOCK_SHATTER_ENERGY) {
+        [[_physicsNode space] addPostStepBlock:^{
+            [self blockRemoved:nodeA];
+        } key:nodeA];
+    }
+}
+
+- (void)blockRemoved:(CCNode *)block {
+
+    CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"BlockShatter"];
+
+    explosion.autoRemoveOnFinish = TRUE;
+
+    explosion.position = block.position;
+
+    [block.parent addChild:explosion];
+    
+    [block removeFromParent];
 }
 
 - (void)sealRemoved:(CCNode *)seal {

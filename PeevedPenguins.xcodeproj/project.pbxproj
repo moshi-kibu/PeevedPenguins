@@ -11,6 +11,10 @@
 		7D0D4BDA19C0D40E0006E805 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D4BD919C0D40E0006E805 /* Seal.m */; };
 		7D74459819C4044A00645DB1 /* WaitingPenguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D74459719C4044A00645DB1 /* WaitingPenguin.m */; };
 		7D74459C19C4DB0200645DB1 /* EndGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D74459B19C4DB0200645DB1 /* EndGame.m */; };
+		7D74459F19C5107500645DB1 /* TallBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D74459E19C5107500645DB1 /* TallBlock.m */; };
+		7D7445A219C5140C00645DB1 /* LongBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7445A119C5140C00645DB1 /* LongBlock.m */; };
+		7D7445A519C5175800645DB1 /* SquareBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7445A419C5175800645DB1 /* SquareBlock.m */; };
+		7D7445A819C5181B00645DB1 /* TaperBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7445A719C5181B00645DB1 /* TaperBlock.m */; };
 		7DA5F9F819C0DA9700CDBAB0 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA5F9F719C0DA9700CDBAB0 /* Gameplay.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
@@ -69,6 +73,14 @@
 		7D74459719C4044A00645DB1 /* WaitingPenguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingPenguin.m; sourceTree = "<group>"; };
 		7D74459A19C4DB0200645DB1 /* EndGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndGame.h; sourceTree = "<group>"; };
 		7D74459B19C4DB0200645DB1 /* EndGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndGame.m; sourceTree = "<group>"; };
+		7D74459D19C5107500645DB1 /* TallBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TallBlock.h; sourceTree = "<group>"; };
+		7D74459E19C5107500645DB1 /* TallBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TallBlock.m; sourceTree = "<group>"; };
+		7D7445A019C5140C00645DB1 /* LongBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongBlock.h; sourceTree = "<group>"; };
+		7D7445A119C5140C00645DB1 /* LongBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongBlock.m; sourceTree = "<group>"; };
+		7D7445A319C5175800645DB1 /* SquareBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareBlock.h; sourceTree = "<group>"; };
+		7D7445A419C5175800645DB1 /* SquareBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareBlock.m; sourceTree = "<group>"; };
+		7D7445A619C5181B00645DB1 /* TaperBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaperBlock.h; sourceTree = "<group>"; };
+		7D7445A719C5181B00645DB1 /* TaperBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaperBlock.m; sourceTree = "<group>"; };
 		7DA5F9F619C0DA9700CDBAB0 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
 		7DA5F9F719C0DA9700CDBAB0 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -146,6 +158,14 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				7DA5F9F619C0DA9700CDBAB0 /* Gameplay.h */,
 				7DA5F9F719C0DA9700CDBAB0 /* Gameplay.m */,
+				7D7445A619C5181B00645DB1 /* TaperBlock.h */,
+				7D7445A719C5181B00645DB1 /* TaperBlock.m */,
+				7D7445A319C5175800645DB1 /* SquareBlock.h */,
+				7D7445A419C5175800645DB1 /* SquareBlock.m */,
+				7D74459D19C5107500645DB1 /* TallBlock.h */,
+				7D74459E19C5107500645DB1 /* TallBlock.m */,
+				7D7445A019C5140C00645DB1 /* LongBlock.h */,
+				7D7445A119C5140C00645DB1 /* LongBlock.m */,
 				7D74459A19C4DB0200645DB1 /* EndGame.h */,
 				7D74459B19C4DB0200645DB1 /* EndGame.m */,
 				7D74459619C4044A00645DB1 /* WaitingPenguin.h */,
@@ -365,13 +385,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7445A519C5175800645DB1 /* SquareBlock.m in Sources */,
 				7D0D4BDA19C0D40E0006E805 /* Seal.m in Sources */,
+				7D7445A219C5140C00645DB1 /* LongBlock.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				7D74459819C4044A00645DB1 /* WaitingPenguin.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				7D0D4BD619C0D3FD0006E805 /* Penguin.m in Sources */,
 				7D74459C19C4DB0200645DB1 /* EndGame.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				7D74459F19C5107500645DB1 /* TallBlock.m in Sources */,
+				7D7445A819C5181B00645DB1 /* TaperBlock.m in Sources */,
 				7DA5F9F819C0DA9700CDBAB0 /* Gameplay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
